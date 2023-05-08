@@ -1,14 +1,9 @@
 const array = [1, 2, 3, 4, 5];
 
-// Two Sum Count And Elements By Normal Way
+// Optimized Solution
 const secondLargest = (array) => {
-  const newArray = [];
-  let count = 0;
-  for (let index = 0; index < array.length; index++) {
-   
-  }
-  console.log("newArray", newArray);
-  console.log(" : ", count);
+  const sortedARray = array.sort((a, b) => b - a);
+  console.log("sortedARray[1] is the Second Larget No: ", sortedARray[1]);
 };
 
-secondLargest(array);
+// secondLargest(array);
